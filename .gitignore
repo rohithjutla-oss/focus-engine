@@ -1,0 +1,41 @@
+# Dependencies
+node_modules
+
+# Build output
+dist
+out
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.eslintcache
+*.log*
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# SQLite database files (created at runtime in userData, but
+# if someone accidentally copies one into the repo)
+*.db
+*.db-wal
+*.db-shm
+
+# Electron build artifacts
+release/
+
+# Python CV environment and cache
+python/cv_env/
+python/**/__pycache__/
+python/**/*.pyc
+python/**/*.pyo
+python/**/*.task
+
+# PyInstaller build directories and specs
+build/*/
+*.spec
+
+# Dynamic ML datasets and candidate models
+python/ml/data/dataset.csv
+python/ml/models/*_candidate*
